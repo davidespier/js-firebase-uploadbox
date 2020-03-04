@@ -68,6 +68,8 @@ var firebaseConfig = {
 
 ## Authors
 
+
+
 **David Espier** - *Developer*
 
 
@@ -76,6 +78,7 @@ var firebaseConfig = {
 [Alexa skills](https://www.amazon.es/s?k=davidespier&i=alexa-skills)
         
 [Other projects](https://github.com/davidespier?tab=repositories)
+
 
 
 ## License
