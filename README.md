@@ -71,7 +71,7 @@ var firebaseConfig = {
 **David Espier** - *Developer*
 
 
-[Personal wwbsite](https://davidespier.com)
+[Personal website](https://davidespier.com)
 
 [Alexa skills](https://www.amazon.es/s?k=davidespier&i=alexa-skills)
         
