@@ -70,7 +70,7 @@ var firebaseConfig = {
 
 
 
-**David Espier** - *Developer*
+ *Developed and designed by*  **David Espier**
 
 
 [Personal website](https://davidespier.com)
