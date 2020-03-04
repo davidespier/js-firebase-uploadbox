@@ -5,9 +5,9 @@ Save your images in the cloud.  Project made with javascript and firebase.
 
 ## Requirements
 
-- Firebase Auth.
-- Firebase Database.
-- Firebase Storage.
+- Firebase auth.
+- Firebase database.
+- Firebase storage.
 - Domain or firebase hosting.
 
 
