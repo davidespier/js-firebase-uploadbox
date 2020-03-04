@@ -102,7 +102,7 @@ function show_user_image(count_image,name_correct){
             images[i] = url.toString();
             var new_item = document.createElement("div");
             new_item.setAttribute("class", "col-md-4 show_img");
-            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'"><img id="img_url" src="'+images[i]+'"></a><div class="row text-center"><div class="col-md-12"><a id="a_url" class="floatleft" href="'+key+'" target="_blank">link to share</a><a class="floatright" onclick="delete_photo()" href="#"><img class="img_quit" src="core/img/quit.png" width="15" height="15"></a></div></div>';
+            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'"><img id="img_url" src="'+images[i]+'"></a><div class="row text-center"><div class="col-md-12 text-center"><a class="linktoshare" id="a_url" href="'+images[i]+'" target="_blank">link to share</a><a onclick="delete_photo()" href="#"><img class="img_quit" src="core/img/quit.png" width="15" height="15"></a></div></div>';
             document.getElementById("photo_library").appendChild(new_item);
 
         }, function (error) {
