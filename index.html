@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>uploadbox</title>
+
+<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="./core/css/styles.css" rel="stylesheet">
+
+</head>
+
+<body> 
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a class="navbar-brand" href="index.php"><img class="navbarimg" src="core/img/box.png" width="42" height="42"></a>
+        <button id="btnLogout" class="btnLogout btnLogout--menu" class="button" onclick="signoutUser()">Logout</button></p>
+        <button class="menuBtn menuBtn--menu"id="login_popup">
+          My account
+        </button>
+        <p class="user_name" id="user_name_info"></p>
+      </div>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="container" id="index">
+    <div class="row" id="margintop10">
+      <div class="col-md-12 text-center">
+        <p class="page-upload">UPLOADBOX</p>
+        <p class="text-upload">A platform to upload your photos and share them with your friends.</p>
+      </div>
+      </div>
+  </div>
+
+  <div class="container" id="my_library">
+    <div class="row" id="margintop10">
+        <div class="col-md-12">
+            <p class="title_library">LIBRARY</p>
+          <button class="uploadBtn uploadBtn--upload" id="upload_popup">
+            Upload
+          </button>
+        </div>
+        <div class="container">
+            <div class="row" id="photo_library">
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="modal_login_popup" class="modal">
+    <div class="modal-content">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="page_img--account">Login account</p>
+            <br>
+            <div class="card">
+              <article class="card-body">
+                  <button class="loginBtn loginBtn--facebook" onclick="FacebookLogin();">
+                    Login with Facebook
+                  </button>
+                  <button class="loginBtn loginBtn--google" onclick="GoogleLogin();">
+                    Login with Google
+                  </button>
+                  <button class="loginBtn loginBtn--github" onclick="GithubLogin();">
+                    Login with Github
+                  </button>
+                  <button class="loginBtn loginBtn--twitter" onclick="TwitterLogin();">
+                    Login with Twitter
+                  </button>
+                  <button class="loginBtn loginBtn--yahoo" onclick="YahooLogin();">
+                    Login with Login
+                  </button>
+              </article>
+              </div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <span class="close1">&times;</span>
+    </div>
+  </div>
+
+  <div id="modal_upload_popup" class="modal">
+    <div class="modal-content">
+
+      <div class="container">
+        <div class="row">
+
+        <div class="col-md-12">
+        <p class="page_img--account">upload photo</p>
+        <hr>
+        <div class="panel panel-default text-center">
+          <div class="panel-body">
+            <form action="" method="post" enctype="multipart/form-data" id="js-upload-form">
+              <div class="form-inline">
+                <div class="form-group ">
+                  <input class="fileContainer" style="color:black;" type="file" id="image" accept="image/*" >
+                </div>
+              </div>
+              <br>
+              <div class="preview_zone" id="preview_zone">
+                <img id="img" width="100%" height="auto" />
+              </div>
+              <br>
+              <div class="progress">
+                <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0"
+                  aria-valuemin="0" aria-valuemax="100" style="width:0%">
+                </div>
+              </div>
+              <div class="js-upload-finished" id="success">
+                <div class="list-group">
+                  <p class="list-group-item list-group-item-success" id="success_date"><span class="badge alert-success pull-right">Success</span> name</p>
+                </div>
+                <br>                 
+              </div>
+              </div>
+                <br>
+                <button class="uploadBtn2 uploadBtn2--upload2" type="button" onclick="upload()" >Upload</button>
+                </form>
+                </div>
+              </div>
+          </div>
+          <br>
+          <span class="close3">&times;</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3"><a href="https://davidespier.com/">© davidespier.com</a>
+    </div>
+  </footer>
+
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+<script src="./core/js/app.js"></script>
+
+
+</body>
+</html>
