@@ -490,7 +490,7 @@
 }
 #img_url{
   width: 100%;
-  height: 200px;
+  height: auto;
   padding: 5%;
 }
 .floatright{

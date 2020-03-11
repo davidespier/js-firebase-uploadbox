@@ -36,13 +36,13 @@ window.onclick = function(event) {
 }
 
 var firebaseConfig = {
-    apiKey: "*************",
-    authDomain: "*************",
-    databaseURL: "*************",
-    projectId: "*************",
-    storageBucket: "*************",
-    messagingSenderId: "*************",
-    appId: "*************"
+    apiKey: "AIzaSyDWqiofB8OMzrXj8dhSlmTgjmt8u0LEbHY",
+    authDomain: "project-linebox.firebaseapp.com",
+    databaseURL: "https://project-linebox.firebaseio.com",
+    projectId: "project-linebox",
+    storageBucket: "project-linebox.appspot.com",
+    messagingSenderId: "548448283987",
+    appId: "1:548448283987:web:f549d079ecc37f0c4ac5a6"
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -61,12 +61,12 @@ function handleAuthState(user) {
 
 
 function showPrivateInfo(user) {
-  const login_popup = document.getElementById('login_popup');
-  const upload_popup = document.getElementById('upload_popup');
-  const btnLogout = document.getElementById('btnLogout');
-  const user_name_info = document.getElementById('user_name_info');
-  const my_library = document.getElementById('my_library');
-  const index = document.getElementById('index');
+  var login_popup = document.getElementById('login_popup');
+  var upload_popup = document.getElementById('upload_popup');
+  var btnLogout = document.getElementById('btnLogout');
+  var user_name_info = document.getElementById('user_name_info');
+  var my_library = document.getElementById('my_library');
+  var index = document.getElementById('index');
 
   var name_correct = showNameCorrect(user);
 
@@ -102,7 +102,7 @@ function show_user_image(count_image,name_correct){
             images[i] = url.toString();
             var new_item = document.createElement("div");
             new_item.setAttribute("class", "col-md-4 show_img");
-            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'"><img id="img_url" src="'+images[i]+'"></a><div class="row text-center"><div class="col-md-12 text-center"><a class="linktoshare" id="a_url" href="'+images[i]+'" target="_blank">link to share</a><a onclick="delete_photo()" href="#"><img class="img_quit" src="core/img/quit.png" width="15" height="15"></a></div></div>';
+            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'"><img id="img_url" src="'+images[i]+'"></a><div class="row text-center"><div class="col-md-12 text-center"><a class="linktoshare" id="a_url" href="'+images[i]+'" target="_blank">link to share</a><a onclick="delete_photo()" href="#"></a></div></div>';
             document.getElementById("photo_library").appendChild(new_item);
 
         }, function (error) {
@@ -112,12 +112,12 @@ function show_user_image(count_image,name_correct){
 }
 
 function showLoginForm() {
-  const loginForm = document.getElementById('login_popup');
-  const uploadForm = document.getElementById('upload_popup');
-  const btnLogout = document.getElementById('btnLogout');
-  const user_name_info = document.getElementById('user_name_info');
-  const my_library = document.getElementById('my_library');
-  const index = document.getElementById('index');
+  var loginForm = document.getElementById('login_popup');
+  var uploadForm = document.getElementById('upload_popup');
+  var btnLogout = document.getElementById('btnLogout');
+  var user_name_info = document.getElementById('user_name_info');
+  var my_library = document.getElementById('my_library');
+  var index = document.getElementById('index');
 
   user_name_info.style.display = 'none';
   btnLogout.style.display = 'none';
