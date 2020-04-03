@@ -14,7 +14,7 @@ Save your images in the cloud.  Project made with javascript and firebase.
 ## Installation
 
 1. You must first add the firebase project information, 
-in the file 'core/js/app.js'.
+in the file 'config.js'.
 
 
 ```bash
