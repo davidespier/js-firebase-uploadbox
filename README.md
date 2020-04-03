@@ -1,4 +1,4 @@
-![uploadbox-show](http://davidespier.com/img/appweb/uploadbox.png)
+![uploadbox](http://davidespier.com/img/appweb/uploadbox.png)
 
 # UPLOADBOX
 Save your images in the cloud.  Project made with javascript and firebase.
@@ -14,7 +14,7 @@ Save your images in the cloud.  Project made with javascript and firebase.
 ## Installation
 
 1. You must first add the firebase project information, 
-in the file 'config.js'.
+in the file 'core/js/app.js'.
 
 
 ```bash
