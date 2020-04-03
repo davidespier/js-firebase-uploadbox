@@ -32,22 +32,20 @@
 </head>
 
 <body> 
-
-  <nav class="navbar navbar-expand-md">
-    <a href="index.html">U P L O A D B O X</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-    </button>
-
-     <div class="collapse navbar-collapse" id="navbarsExample04">
-      <ul class="navbar-nav mr-auto">
-      </ul>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <a class="navbar-brand" href="index.html"><img class="navbarimg" src="core/img/box.png" width="42" height="42"></a>
+        <button id="btnLogout" class="btnLogout btnLogout--menu" class="button" onclick="signoutUser()">Logout</button></p>
+        <button class="menuBtn menuBtn--menu"id="login_popup">
+          My account
+        </button>
         <p class="user_name" id="user_name_info"></p>
-        <button id="btnLogout" class="menuBtn menuBtn--menu" class="button" onclick="signoutUser()">Logout</button>
-        <button class="menuBtn menuBtn--menu"id="login_popup">My account</button>
+      </div>
     </div>
-  </nav>
+  </div>
 
+  <br>
 
   <div class="container" id="index">
     <div class="row" id="margintop10">
@@ -61,7 +59,7 @@
   <div class="container" id="my_library">
     <div class="row" id="margintop10">
         <div class="col-md-12">
-            <p class="title_library">MY LIBRARY</p>
+            <p class="title_library">LIBRARY</p>
           <button class="uploadBtn uploadBtn--upload" id="upload_popup">
             Upload
           </button>
@@ -159,7 +157,7 @@
     <div class="footer-copyright text-center py-3">U P L O A D B O X <a href="https://davidespier.com/">© davidespier.com</a>
     </div>
   </footer>
-<script src="config.js"></script>
+
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
 <script src="./core/js/app.js"></script>
