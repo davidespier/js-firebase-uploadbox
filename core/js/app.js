@@ -1,3 +1,21 @@
+//--- PASTE YOUR CONFIG FIREBASE
+
+var firebaseConfig = {
+    apiKey: "****",
+    authDomain: "****",
+    databaseURL: "****",
+    projectId: "****",
+    storageBucket: "****",
+    messagingSenderId: "****",
+    appId: "****"
+};
+
+//-------------------------
+
+firebase.initializeApp(firebaseConfig);
+firebase.auth().onAuthStateChanged(handleAuthState);
+
+
 var images = [];
 var modal_login_popup = document.getElementById("modal_login_popup");
 var modal_upload_popup = document.getElementById("modal_upload_popup");
@@ -34,20 +52,6 @@ window.onclick = function(event) {
     modal_upload_popup.style.display = "none";
   }
 }
-
-var firebaseConfig = {
-    apiKey: "AIzaSyDWqiofB8OMzrXj8dhSlmTgjmt8u0LEbHY",
-    authDomain: "project-linebox.firebaseapp.com",
-    databaseURL: "https://project-linebox.firebaseio.com",
-    projectId: "project-linebox",
-    storageBucket: "project-linebox.appspot.com",
-    messagingSenderId: "548448283987",
-    appId: "1:548448283987:web:f549d079ecc37f0c4ac5a6"
-};
-
-firebase.initializeApp(firebaseConfig);
-
-firebase.auth().onAuthStateChanged(handleAuthState);
 
 function handleAuthState(user) {
   if (user) {
