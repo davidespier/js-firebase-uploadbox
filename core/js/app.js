@@ -1,13 +1,13 @@
 //--- PASTE YOUR CONFIG FIREBASE
 
-var firebaseConfig = {
-    apiKey: "****",
-    authDomain: "****",
-    databaseURL: "****",
-    projectId: "****",
-    storageBucket: "****",
-    messagingSenderId: "****",
-    appId: "****"
+const firebaseConfig = {
+  apiKey: "AIzaSyDWqiofB8OMzrXj8dhSlmTgjmt8u0LEbHY",
+  authDomain: "project-linebox.firebaseapp.com",
+  databaseURL: "https://project-linebox.firebaseio.com",
+  projectId: "project-linebox",
+  storageBucket: "project-linebox.appspot.com",
+  messagingSenderId: "548448283987",
+  appId: "1:548448283987:web:f549d079ecc37f0c4ac5a6"
 };
 
 //-------------------------
@@ -15,43 +15,9 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 firebase.auth().onAuthStateChanged(handleAuthState);
 
-
 var images = [];
-var modal_login_popup = document.getElementById("modal_login_popup");
-var modal_upload_popup = document.getElementById("modal_upload_popup");
 
-var btn_login = document.getElementById("login_popup");
-var btn_upload = document.getElementById("upload_popup");
-
-var close1 = document.getElementsByClassName("close1")[0];
-var close2 = document.getElementsByClassName("close2")[0];
-var close3 = document.getElementsByClassName("close3")[0];
-
-const successinfo = document.getElementById('success');
-successinfo.style.display = 'none';
-
-btn_login.onclick = function() {
-  modal_login_popup.style.display = "block";
-}
-close1.onclick = function() {
-   modal_login_popup.style.display = "none";
-}
-
-
-btn_upload.onclick = function() {
-  modal_upload_popup.style.display = "block";
-}
-close3.onclick = function() {
-  modal_upload_popup.style.display = "none";
-}
-
-window.onclick = function(event) {
-  if (event.target == modal_login_popup) {
-    modal_login_popup.style.display = "none";
-  }else if (event.target == modal_upload_popup) {
-    modal_upload_popup.style.display = "none";
-  }
-}
+document.getElementById('success').style.display = 'none';
 
 function handleAuthState(user) {
   if (user) {
@@ -65,22 +31,20 @@ function handleAuthState(user) {
 
 
 function showPrivateInfo(user) {
-  var login_popup = document.getElementById('login_popup');
-  var upload_popup = document.getElementById('upload_popup');
+
   var btnLogout = document.getElementById('btnLogout');
   var user_name_info = document.getElementById('user_name_info');
-  var my_library = document.getElementById('my_library');
   var index = document.getElementById('index');
-
+  var content = document.getElementById('content');
   var name_correct = showNameCorrect(user);
 
-  login_popup.style.display = 'none';
-  upload_popup.style.display = 'block';
-  user_name_info.style.display = 'block';
-  user_name_info.innerHTML = name_correct;
-  btnLogout.style.display = 'block';
-  my_library.style.display = 'block';
   index.style.display = 'none';
+  content.style.display = 'block';
+  user_name_info.style.display = 'block';
+  btnLogout.style.display = 'block';
+
+  user_name_info.innerHTML = name_correct;
+
 
   var count_image;
   var ref = firebase.database().ref('user/'+name_correct).on("value", function(snapshot) {
@@ -105,8 +69,8 @@ function show_user_image(count_image,name_correct){
             var url = snapshot.child(key).val();
             images[i] = url.toString();
             var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-4 show_img");
-            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'"><img id="img_url" src="'+images[i]+'"></a><div class="row text-center"><div class="col-md-12 text-center"><a class="linktoshare" id="a_url" href="'+images[i]+'" target="_blank">link to share</a><a onclick="delete_photo()" href="#"></a></div></div>';
+            new_item.setAttribute("class", "col-md-4 img-content");
+            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><img src="'+images[i]+'" alt="preview1" height="285"></a>';
             document.getElementById("photo_library").appendChild(new_item);
 
         }, function (error) {
@@ -116,19 +80,16 @@ function show_user_image(count_image,name_correct){
 }
 
 function showLoginForm() {
-  var loginForm = document.getElementById('login_popup');
-  var uploadForm = document.getElementById('upload_popup');
+
   var btnLogout = document.getElementById('btnLogout');
   var user_name_info = document.getElementById('user_name_info');
-  var my_library = document.getElementById('my_library');
   var index = document.getElementById('index');
+  var content = document.getElementById('content');
 
+  index.style.display = 'block';
+  content.style.display = 'none';
   user_name_info.style.display = 'none';
   btnLogout.style.display = 'none';
-  loginForm.style.display = 'block';
-  uploadForm.style.display = 'none';
-  my_library.style.display = 'none';
-  index.style.display = 'block';
 
 }
 
@@ -232,12 +193,12 @@ function upload() {
         document.getElementById("progress-bar").innerHTML = progress+"%";
 
         if(progress==100){
-          document.getElementById("progress-bar").style.backgroundColor = "green";
-          document.getElementById('success').style.display = 'block';
-          document.getElementById("progress-bar").style.display = "none";
+   
           document.getElementById("success_date").innerHTML = "The image has been uploaded correctly.";
-          document.getElementById("my_library").style.display="none";
-          setTimeout("location.reload(true);", 1000);
+          document.getElementById("success").style.display="block";
+          document.getElementById("success").style.display="block";
+          document.getElementById("buttonUpload").style.display="none";
+          setTimeout(function(){ window.location.href = 'index.html'; }, 1000);
         }else{
           document.getElementById("progress-bar").style.backgroundColor = "#4c69ba";
         }
