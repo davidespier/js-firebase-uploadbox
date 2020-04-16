@@ -1,4 +1,4 @@
-![uploadbox](http://davidespier.com/img/appweb/uploadbox.png)
+![uploadbox](http://davidespier.com/github/upload.jpg)
 
 # UPLOADBOX
 Save your images in the cloud.  Project made with javascript and firebase.
