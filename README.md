@@ -1,7 +1,7 @@
 ![uploadbox](https://i.postimg.cc/fbWSM2kT/upload.jpg)
 
 # UPLOADBOX
-Save your images in the cloud.  Project made with javascript and firebase.
+Save your documents in the cloud.  Project made with javascript and firebase.
 
 ## Requirements
 
