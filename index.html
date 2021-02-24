@@ -29,12 +29,11 @@
 <title>Uploadbox</title>
 
 <link href="core/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-<link href="core/css/styles.css" rel="stylesheet">
+<link href="core/css/index.css" rel="stylesheet">
 
 </head>
-
 <body> 
-<div id="index">
+
   <div class="row">
       <div class="col-xl-6 left-div">
           <div class="left-vertical-div">
@@ -70,94 +69,14 @@
         </footer>
     </div>
   </div>
-</div>
-<div id="content">
-  <nav class="navbar navbar-expand-lg navbar-dark primary-color bg-blue">
-    <a class="navbar-brand" href="#">UPLOADBOX</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="basicExampleNav">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#upload" >Upload</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
-        </li>
-      </ul>
-      <div class="form-inline">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" id="user_name_info" href=""></a>
-            </li>
-
-            <li class="nav-item">
-              <a class="nav-link" id="btnLogout" onclick="signoutUser();" href="">Logout</a>
-            </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="container">
-    <p class="library-name">My library</p>
-    <div class="row" id="photo_library">
-    </div>
-  </div>
-  <footer class="content-footer">
-    <p>© 2020 uploadbox</p>
-  </footer>
-</div>
-
-<div id="upload" class="overlay">
-  <div class="popup">
-    <a class="close" href="#">&times;</a>
-      <form class="text-center" action="" method="post" enctype="multipart/form-data" id="js-upload-form">
-        <p class="upload-file">Upload file</p>
-
-          <br>
-        <div class="preview_zone" id="preview_zone">
-          <img id="img" width="30%" height="auto" />
-        </div>
-          <br>
-        <div class="progress">
-          <div id="progress-bar" class="progress-bar" role="progressbar" aria-valuenow="0"
-                      aria-valuemin="0" aria-valuemax="100" style="width:0%">
-          </div>
-        </div>
-        <br>
-        <div class="js-upload-finished" id="success">
-          <div class="list-group">
-            <p class="list-group-item list-group-item-success" id="success_date"><span class="badge alert-success pull-right">Success</span> name</p>
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-md-6">
-            <label class="custom-file-upload text-center">
-              <input lass="fileContainer" style="color:black;" type="file" id="image" accept="image/*"/>
-              Search photo
-            </label>
-          </div>
-          <div class="col-md-6">
-            <button id="buttonUpload" type="button" onclick="upload()" >Upload</button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </div>
-</div>
 
 
 <script src="core/vendor/jquery/jquery.slim.min.js"></script>
 <script src="core/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
-<script src="core/js/app.js"></script>
+<script src="core/js/config.js"></script>
+<script src="core/js/login.js"></script>
 
 
 </body>

@@ -15,6 +15,7 @@ footer{
   margin-top: 2%;
   position: relative;
 }
+
 .navbar{
   background-color: #007fe9;
   font-weight: 400;
@@ -32,6 +33,7 @@ footer{
 .right-div{
 	height: 100vh;
 }
+
 .left-vertical-div{
 	text-align: center;
 	margin: 0;
@@ -40,6 +42,7 @@ footer{
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
 .title-div{
 	color: #ffffff;
 	font-size: 91px;
@@ -49,11 +52,11 @@ footer{
 	color: #ffffff;
 	font-size: 23px;	
 }
-
 .title-div-login{
 	font-size: 35px;
 	font-weight: 600;
 }
+
 .form-right{
 	position: absolute;
 	top: 50%;
@@ -61,6 +64,7 @@ footer{
 	transform: translate(-50%, -50%);
 	text-align: left;
 }
+
 .loginBtn {
   box-sizing: border-box;
   position: relative;
@@ -146,99 +150,6 @@ footer{
 }
 .loginBtn--yahoo:hover,.loginBtn--yahoo:focus {
   background: #4e01aa;
-}
-.content{
-  height: 100vh;
-}
-.img-content{
-  text-align: center;
-  background-color: white;
-  margin-top: 5%;
-}
-.library-name{
-  text-transform: uppercase;
-  margin-top: 2%;
-  font-size: 25px;
-  font-weight: 600;
-}
-#user_name_info{
-  color: white;
-  font-weight: 600;
-}
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
-}
-.overlay:target {
-  visibility: visible;
-  opacity: 1;
-}
-
-.popup {
-  margin: 70px auto;
-  padding: 20px;
-  background: #fff;
-  border-radius: 5px;
-  width: 80%;
-  position: relative;
-  transition: all 5s ease-in-out;
-  height: auto;close
-}
-
-.popup .close {
-  position: absolute;
-  top: 20px;
-  right: 30px;
-  transition: all 200ms;
-  font-size: 30px;
-  font-weight: bold;
-  text-decoration: none;
-  color: #333;
-}
-.popup .close:hover {
-  color: #000;
-}
-.popup .content {
-  max-height: 30%;
-  overflow: auto;
-}
-#buttonUpload{
-  padding: 20px 50px;
-  color: #ffffff;
-  margin-top: 2%;
-  border: none;
-  background-color: #007fe9;
-}
-.upload-file{
-  font-size: 25px;
-  font-weight: 600;
-}
-.custom-file-upload{
-  padding: 20px 50px;
-  color: black;
-  border: solid 2px black;
-  background-color: white;
-}
-input[type="file"] {
-    display: none;
-}
-@media only screen and (max-width: 414px) {
-.title-div{
-  color: #ffffff;
-  font-size: 41px;
-  font-weight: 600;
-}
-.text-div{
-  color: #ffffff;
-  font-size: 18px;  
-}
+} 
 
 }

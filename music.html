@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<link rel="apple-touch-icon" sizes="57x57" href="core/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="core/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="core/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="core/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="core/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="core/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="core/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="core/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="core/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="core/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="core/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="core/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="core/img/favicon-16x16.png">
+<link rel="manifest" href="core/img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="core/img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<title>Uploadbox - Music</title>
+
+<link href="core/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="core/css/myfiles.css" rel="stylesheet">
+
+</head>
+<body> 
+    <div class="row">
+        <div class="line-content col-md-12">
+            <div class="d-flex flex-column flex-md-row align-items-center p-4 px-md-4 mb-3">
+              <h5 class="my-0 mr-md-auto font-weight-normal">Uploadbox</h5>
+
+              <nav class="my-2 my-md-0 mr-md-3">
+                <img class="img-ico-user" src="core/img/ico/null.png" >
+                <div class="dropdown">
+                 <a id="user_name_info"></a><img class="img-ico-arrow" src="core/img/ico/arrow-down.png" >
+                  <div class="dropdown-content">
+                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/gear-fill.png" >Settings</a>
+                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/box-arrow-in-right.png" >Logout</a>
+                  </div>
+                </div>
+              </nav>
+            </div>
+        </div>
+        <div class="menu-content col-md-2">
+            <div class="vertical-menu">
+              <br>
+              <a href="dashboard.html"><img class="img-ico-menu" src="core/img/ico/speedometer.png"> Dashboard</a>
+              <a href="documents.html"><img class="img-ico-menu" src="core/img/ico/archive.png"> Documents</a>
+              <a href="music.html" class="active"><img class="img-ico-menu" src="core/img/ico/file-music.png">Music</a>
+              <a href="images.html"><img class="img-ico-menu" src="core/img/ico/image.png"> Images</a>   
+              <a href="videos.html"><img class="img-ico-menu" src="core/img/ico/file-play.png"> Videos</a>   
+
+            </div>
+        </div>
+        <div class="content col-md-10">
+          <div class="upload-btn-wrapper">
+            <button class="btn">Upload a Music</button>
+            <input type="file" name="file" id="file" accept="audio/*"/>
+          </div>
+
+
+          <p class="directory" id="directory" value="music"></p>
+          <div class="row collection" id="collection">
+
+          </div>
+
+        </div>
+    </div>
+
+    <script src="core/vendor/jquery/jquery.slim.min.js"></script>
+    <script src="core/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+    <script src="core/js/config.js"></script>
+    <script src="core/js/app.js"></script>
+    <script src="core/js/upload.js"></script>
+    <script src="core/js/logout.js"></script>;
+
+    <script type="text/javascript">
+      var directory = 'music';
+    </script>
+
+
+    </body>
+</html>
