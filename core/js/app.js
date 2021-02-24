@@ -66,7 +66,7 @@ function DirectoryControl(count_image,userRef){
             var name_object = extractNameFirebaseLink(url_link);
 
             var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-4 img-content");
+            new_item.setAttribute("class", "col-xl-4 img-content");
 
             new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><img src="'+images[i]+'" alt="preview1" height="250"><p class="title_download_object">'+name_object+'</p></a>';
             document.getElementById("collection").appendChild(new_item);
@@ -86,7 +86,7 @@ function DirectoryControl(count_image,userRef){
             var name_object = extractNameFirebaseLink(url_link);
 
             var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-2 img-content");
+            new_item.setAttribute("class", "col-xl-2 img-content");
 
 
             new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><img src="core/img/ico/file-music-single.png" alt="preview1" height="128" width="128"><p class="title_download_object">'+name_object+'</p></a>';
@@ -108,7 +108,7 @@ function DirectoryControl(count_image,userRef){
             var name_object = extractNameFirebaseLink(url_link);
 
             var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-4 img-content");
+            new_item.setAttribute("class", "col-xl-4 img-content");
 
 
             new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><video class="video" src="'+images[i]+'" height="256" width="256" controls>Your browser does not support the video tag.</video><p class="title_download_object">'+name_object+'</p></a>';
@@ -129,7 +129,7 @@ function DirectoryControl(count_image,userRef){
             var name_object = extractNameFirebaseLink(url_link);
 
             var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-2 img-content");
+            new_item.setAttribute("class", "col-xl-2 img-content");
 
 
             new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><img src="core/img/ico/file-documents.png" alt="preview1" height="128" width="128"><p class="title_download_object">'+name_object+'</p></a>';
@@ -139,6 +139,7 @@ function DirectoryControl(count_image,userRef){
           var errorMessage=error.message;
         });
     }
+
   }
 
 }
@@ -149,3 +150,4 @@ function extractNameFirebaseLink(url_link){
             var aux = res[3].split("?",2);
             return aux[0].replace(/%20/gi, " ");
 }
+

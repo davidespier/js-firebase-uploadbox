@@ -8,7 +8,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     userRef = showNameCorrect(user);
     user_name_info.innerHTML = "Hi, "+userRef;
 
-    showPrivateInfo(userRef)
+    controlDashboard(userRef)
     } else {
       window.location.href = "index.html";
     }
@@ -33,42 +33,60 @@ function showNameCorrect(user){
     }
 }
 
-var images = [];
+function controlDashboard(userRef) {
 
+  documents();
+  music();
+  images();
+  videos();
 
+}
 
-function showPrivateInfo(userRef) {
-
-
-  var count_image;
-  var ref = firebase.database().ref('user/'+userRef+'/'+directory).on("value", function(snapshot) {
+function documents(){
+  
+  var ref = firebase.database().ref('user/'+userRef+'/documents').on("value", function(snapshot) {
 
   count_image = snapshot.numChildren();
 
-  show_user_image(count_image,userRef);
+  number_documents.innerHTML = count_image;
 
   }, function (error) {
     var errorMessage=error.message;
   });
-
 }
+function music(){
 
-function show_user_image(count_image,userRef){
+  var ref = firebase.database().ref('user/'+userRef+'/music').on("value", function(snapshot) {
 
-    for (var i = 0; i < count_image; i++) {
-        var ref = firebase.database().ref('user/'+userRef+'/'+directory).on("value", function(snapshot) {
-        var count_image = snapshot.numChildren();
+  count_image = snapshot.numChildren();
 
-            var key = Object.keys(snapshot.val())[i];
-            var url = snapshot.child(key).val();
-            images[i] = url.toString();
-            var new_item = document.createElement("div");
-            new_item.setAttribute("class", "col-md-4 img-content");
-            new_item.innerHTML = '<a target="_blank" href="'+images[i]+'" ><img src="'+images[i]+'" alt="preview1" height="250"></a>';
-            document.getElementById("collection").appendChild(new_item);
+  number_music.innerHTML = count_image;
 
-        }, function (error) {
-          var errorMessage=error.message;
-        });
-    }
+  }, function (error) {
+    var errorMessage=error.message;
+  });
+}
+function images(){
+
+  var ref = firebase.database().ref('user/'+userRef+'/photos').on("value", function(snapshot) {
+
+  count_image = snapshot.numChildren();
+
+  number_images.innerHTML = count_image;
+
+  }, function (error) {
+    var errorMessage=error.message;
+  });
+}
+function videos(){
+
+  var ref = firebase.database().ref('user/'+userRef+'/videos').on("value", function(snapshot) {
+
+  count_image = snapshot.numChildren();
+
+  number_videos.innerHTML = count_image;
+
+  }, function (error) {
+    var errorMessage=error.message;
+  });
 }

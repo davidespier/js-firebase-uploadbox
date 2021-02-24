@@ -26,7 +26,7 @@
 <meta name="description" content="">
 <meta name="author" content="">
 
-<title>Uploadbox - Images</title>
+<title>Uploadbox - Dashboard</title>
 
 <link href="core/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 <link href="core/css/myfiles.css" rel="stylesheet">
@@ -43,14 +43,14 @@
                 <div class="dropdown">
                  <a id="user_name_info"></a><img class="img-ico-arrow" src="core/img/ico/arrow-down.png" >
                   <div class="dropdown-content">
-                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/gear-fill.png" >Settings</a>
-                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/box-arrow-in-right.png" >Logout</a>
+                    <a href=""><img class="img-ico-user-profile" src="core/img/ico/gear-fill.png" >Settings</a>
+                    <a href="" onclick="signoutUser();"><img class="img-ico-user-profile" src="core/img/ico/box-arrow-in-right.png" >Logout</a>
                   </div>
                 </div>
               </nav>
             </div>
         </div>
-        <div class="menu-content col-md-2">
+        <div class="menu-content col-md-3">
             <div class="vertical-menu">
               <br>
               <a href="dashboard.html" class="active"><img class="img-ico-menu" src="core/img/ico/speedometer.png"> Dashboard</a>
@@ -61,8 +61,35 @@
 
             </div>
         </div>
-        <div class="content col-md-10">
+        <div class="content col-md-9">
+          <div class="row">
 
+            <div class="col-xl-2 square-control">
+              <p class="number-control" id="number_documents"></p>
+              <p class="text-control"><img class="img-ico-menu" src="core/img/ico/archive.png" width="32" height="32">Documents</p>
+            </div>
+           
+            <div class="col-xl-2 square-control">
+              <p class="number-control" id="number_music"></p>
+              <p class="text-control"><img class="img-ico-menu" src="core/img/ico/file-music.png" width="32" height="32">Music</p>
+            </div>
+
+            <div class="col-xl-2 square-control">
+              <p class="number-control" id="number_images"></p>
+              <p class="text-control"><img class="img-ico-menu" src="core/img/ico/image.png" width="32" height="32">Images</p>
+            </div>
+
+            <div class="col-xl-2 square-control">
+              <p class="number-control" id="number_videos"></p>
+              <p class="text-control"><img class="img-ico-menu" src="core/img/ico/file-play.png" width="32" height="32">Videos</p>
+            </div>
+
+            <div class="col-md-10">
+
+
+            </div>
+
+          </div>
         </div>
     </div>
 
@@ -73,10 +100,6 @@
     <script src="core/js/config.js"></script>
     <script src="core/js/dashboard.js"></script>
     <script src="core/js/logout.js"></script>;
-
-    <script type="text/javascript">
-      var directory = "dashboard";
-    </script>
 
 
     </body>

@@ -43,8 +43,8 @@
                 <div class="dropdown">
                  <a id="user_name_info"></a><img class="img-ico-arrow" src="core/img/ico/arrow-down.png" >
                   <div class="dropdown-content">
-                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/gear-fill.png" >Settings</a>
-                    <a href="#"><img class="img-ico-user-profile" src="core/img/ico/box-arrow-in-right.png" >Logout</a>
+                    <a href=""><img class="img-ico-user-profile" src="core/img/ico/gear-fill.png" >Settings</a>
+                    <a href="" onclick="signoutUser();"><img class="img-ico-user-profile" src="core/img/ico/box-arrow-in-right.png" >Logout</a>
                   </div>
                 </div>
               </nav>
@@ -64,7 +64,7 @@
         <div class="content col-md-10">
           <div class="upload-btn-wrapper">
             <button class="btn">Upload a Documents</button>
-            <input type="file" name="file" id="file" accept=".exe,.iso,.rar,.txt,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
+            <input type="file" id="file" name="MAX_FILE_SIZE" data-max-size="25000" accept=".exe,.iso,.rar,.txt,.pdf,.doc,.docx,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"/>
           </div>
 
 
