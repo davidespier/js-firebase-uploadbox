@@ -17,7 +17,7 @@
 ## Mobile:
 <br>
 <img style="float:left" src="https://i.postimg.cc/59LM4BGD/mobile.png" alt="mobile"/>
-<img style="float:left" src="https://i.postimg.cc/J0Nwp8ZR/mobile-2.png" alt="mobile-2"/>
+<img style="float:left" src="https://i.postimg.cc/xj52SYqB/mobile-2.png" alt="mobile-2"/>
 
 
 # UPLOADBOX
