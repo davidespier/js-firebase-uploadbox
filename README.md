@@ -1,4 +1,24 @@
-![uploadbox](https://i.postimg.cc/fbWSM2kT/upload.jpg)
+# Uploadbox
+## Desktop:
+<br>
+<img src="https://i.postimg.cc/4yZ2N9HT/pc.jpg" alt="pc"/></a><br/>
+<img src="https://i.postimg.cc/KjNqK8t3/pc-2.jpg" alt="pc-2"/></a><br/>
+<img src="https://i.postimg.cc/Wp6fYXxp/pc-3.jpg" alt="pc-3"/></a><br/>
+<img src="https://i.postimg.cc/ncFSyqt4/pc-4.jpg" alt="pc-4"/></a><br/>
+<img src="https://i.postimg.cc/hP2ZchSH/pc-5.jpg" alt="pc-5"/></a><br/>
+
+## Ipad:
+<br>
+<img src="https://i.postimg.cc/FHtmbPSr/ipad-1.png" alt="ipad-1"/></a><br/>
+<img src="https://i.postimg.cc/CLnSqyzr/ipad-2.png" alt="ipad-2"/></a><br/>
+<img src="https://i.postimg.cc/Cxj0cjCj/ipad-3.png" alt="ipad-3"/></a><br/>
+
+
+## Mobile:
+<br>
+<img style="float:left" src="https://i.postimg.cc/59LM4BGD/mobile.png" alt="mobile"/>
+<img style="float:left" src="https://i.postimg.cc/J0Nwp8ZR/mobile-2.png" alt="mobile-2"/>
+
 
 # UPLOADBOX
 Save your documents in the cloud.  Project made with javascript and firebase.
@@ -14,7 +34,7 @@ Save your documents in the cloud.  Project made with javascript and firebase.
 ## Installation
 
 1. You must first add the firebase project information, 
-in the file 'core/js/app.js'.
+in the file 'core/js/config.js'.
 
 
 ```bash
