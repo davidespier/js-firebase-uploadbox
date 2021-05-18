@@ -1,13 +1,13 @@
 //--- PASTE YOUR CONFIG FIREBASE
 
   var firebaseConfig = {
-    apiKey: "***********",
-    authDomain: "***********",
-    databaseURL: "***********",
-    projectId: "***********",
-    storageBucket: "***********",
-    messagingSenderId: "***********",
-    appId: "***********"
+    apiKey: "AIzaSyDWqiofB8OMzrXj8dhSlmTgjmt8u0LEbHY",
+    authDomain: "project-linebox.firebaseapp.com",
+    databaseURL: "https://project-linebox.firebaseio.com",
+    projectId: "project-linebox",
+    storageBucket: "project-linebox.appspot.com",
+    messagingSenderId: "548448283987",
+    appId: "1:548448283987:web:f549d079ecc37f0c4ac5a6"
   };
 //-------------------------
 
