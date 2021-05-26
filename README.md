@@ -9,14 +9,14 @@
 
 ## Ipad:
 <br>
-<img src="https://i.postimg.cc/FHtmbPSr/ipad-1.png" alt="ipad-1"/></a><br/>
+<img src="https://i.postimg.cc/3NNyS4Ns/uploadbox-tablet.png" alt="ipad-1"/></a><br/>
 <img src="https://i.postimg.cc/CLnSqyzr/ipad-2.png" alt="ipad-2"/></a><br/>
 <img src="https://i.postimg.cc/Cxj0cjCj/ipad-3.png" alt="ipad-3"/></a><br/>
 
 
 ## Mobile:
 <br>
-<img style="float:left" src="https://i.postimg.cc/59LM4BGD/mobile.png" alt="mobile"/>
+<img style="float:left" src="https://i.postimg.cc/RFX6LQS1/uploadbox-mobile.png" alt="mobile"/>
 <img style="float:left" src="https://i.postimg.cc/xj52SYqB/mobile-2.png" alt="mobile-2"/>
 
 
