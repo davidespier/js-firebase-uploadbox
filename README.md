@@ -1,7 +1,7 @@
 # Uploadbox
 ## Desktop:
 <br>
-<img src="https://i.postimg.cc/4yZ2N9HT/pc.jpg" alt="pc"/></a><br/>
+<img src="https://i.postimg.cc/XJVB5Db7/uploadbox.png" alt="pc"/></a><br/>
 <img src="https://i.postimg.cc/KjNqK8t3/pc-2.jpg" alt="pc-2"/></a><br/>
 <img src="https://i.postimg.cc/Wp6fYXxp/pc-3.jpg" alt="pc-3"/></a><br/>
 <img src="https://i.postimg.cc/ncFSyqt4/pc-4.jpg" alt="pc-4"/></a><br/>
